@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/pages/planos.css" />
+    <link rel="stylesheet" href="../styles/global/typography.css" />
+    <link rel="stylesheet" href="../styles/global/variables.css" />
+    <link rel="icon" href="../assets/icons/Sonoro-logo.ico" />
+    <link rel="stylesheet" href="../styles/global/global.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonara.IA | Planos e Preços</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="logo-wrapper" 
+      onclick="window.location.href = '../index.html'" 
+      style="cursor: pointer;" 
+      >
+        <img src="../assets/icons/Sonoro-logo.png" class="logo" />
+        <h4 class="company-name title-h5">Sonara.IA</h4>
+      </div>
+      <nav class="navigation">
+        <a class="body-regular active" href="/pages/planos.html">Preços e Planos</a>
+        <a class="body-regular">Sobre</a>
+        <a class="body-regular"
+          >Recursos <i class="icon fa-solid fa-chevron-down"></i
+        ></a>
+        <a class="body-regular">Blog</a>
+        <a class="body-regular">Contato</a>
+        <a class="body-regular">Afiliados</a>
+      </nav>
+      <div class="button-wrapper">
+        <button class="login-btn body-regular">Login</button>
+        <button class="cta-btn body-regular">Iniciar Teste Grátis</button>
+      </div>
+    </div>
+    <main>
+      <section class="hero-prices">
+        <div class="hero-overlay-right"></div>
+        <div class="hero-overlay-left"></div>
+        <div class="prices-headline-wrapper">
+            <h5 class="body-medium"><span>Preços e Planos</span></p>
+            <h4 class="hero-headline">
+                <span>
+                    Otimize a sua produção
+                </span> com <br/> transparência e <br/> previsibilidade
+            </h4>
+            <p class="subtitle">Tenha acesso a um clipping com curadoria atualizado 24 horas por dia, 7 dias por semana. Escale <br/>
+            sua produção transformando esse feed em locuções com trilhas sonoras via inteligência artificial. </p>
+        </div>
+        <div class="button-toggle-wrapper">
+            <button id="btn-monthly" class="body-medium btn-toggle-active" onclick="switchplan('monthly')">Mensal</button>
+            <button id="btn-yearly" class="body-medium btn-toggle-disabled" onclick="switchplan('yearly')">
+                Anual
+            <span class="badge-free body-badge">2 meses grátis</span></button>
+        </div>
+        <div id="badge-saving" class="badge-saving-wrapper" style="display: none">
+          <p class="body-medium saving-badge">Economize 16% - 2 meses grátis</p>
+        </div>
+      </section>
+      <section class="card-prices">
+        <div class="prices-grid-wrapper">
+            <div class="price-card">
+      <div class="price-card-top">
+        <h5 class="title-h5">Standard</h5>
+        <p class="body-regular">Ideal para pequenas redações e assessorias.</p>
+        <div class="price-block">
+          <span class="title-h5 price-value" data-monthly="R$ 881,54" data-yearly="R$ 734,64">R$ 881,54</span>
+          <span class="body-regular price-period">/mês</span>
+        </div>
+      </div>
+      <ul class="price-features-list">
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">Clipping com curadoria jornalística (filtros por região e editoria)</span>
+        </li>
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">60 gerações de áudio/mês (não cumulativos)</span>
+        </li>
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">Conversão de texto em áudio com sotaques personalizados</span>
+        </li>
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">Inclusão de trilhas sonoras via IA</span>
+        </li>
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">1 Licença de usuário</span>
+        </li>
+      </ul>
+      <button class="price-card-btn-outline body-regular">Iniciar Trial de 3 Dias</button>
+    </div>
+
+    <!-- Plus (recomendado) -->
+    <div class="price-card price-card-featured">
+      <span class="badge-recommended body-medium">Recomendado</span>
+      <div class="price-card-top">
+        <h5 class="title-h5">Plus</h5>
+        <p class="body-regular">Para portais e rádios em crescimento.</p>
+        <div class="price-block">
+          <span class="title-h5 price-value" data-monthly="R$ 1.206,05" data-yearly="R$ 1.005,05">R$ 1.206,05</span>
+          <span class="body-regular price-period">/mês</span>
+        </div>
+      </div>
+      <ul class="price-features-list">
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular"><strong>Todos os recursos do Standard, mais:</strong></span>
+        </li>
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">120 gerações de áudio/mês (não cumulativos)</span>
+        </li>
+      </ul>
+      <button class="price-card-btn-primary body-regular">Assinar Plano Plus</button>
+    </div>
+
+    <!-- Pro -->
+    <div class="price-card">
+      <div class="price-card-top">
+        <h5 class="title-h5">Pro</h5>
+        <p class="body-regular">Para operações robustas e múltiplas equipes.</p>
+        <div class="price-block">
+          <span class="title-h5 price-value" data-monthly="R$ 1.981,73" data-yearly="R$ 1.651,44">R$ 1.981,73</span>
+          <span class="body-regular price-period">/mês</span>
+        </div>
+      </div>
+      <ul class="price-features-list">
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular"><strong>Todos os recursos do Plus, mais:</strong></span>
+        </li>
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">400 gerações de áudio/mês (não cumulativos)</span>
+        </li>
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">3 Licenças de usuários (licenças adicionais disponíveis)</span>
+        </li>
+      </ul>
+      <button class="price-card-btn-outline body-regular">Assinar Plano Pro</button>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="price-card">
+      <div class="price-card-top">
+        <h5 class="title-h5">Enterprise</h5>
+        <p class="body-regular">Estrutura sob medida para grandes conglomerados de mídia.</p>
+        <div class="price-block">
+          <span class="title-h5">Sob Consulta</span>
+        </div>
+      </div>
+      <ul class="price-features-list">
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">Volume de geração de áudio personalizado</span>
+        </li>
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">Acesso exclusivo à API Sonora.ai para integrações</span> 
+        </li>
+        <li class="price-feature-item">
+          <i class="fa-regular fa-circle-check feature-icon"></i>
+          <span class="body-regular">Suporte dedicado e SLAs prioritários</span>
+        </li>
+      </ul>
+      <button class="price-card-btn-outline body-regular">Falar com Especialista</button>
+    </div>
+
+  </div>
+      </section>
+      <section class="prices-faq">
+        <div class="radial-gradient-down-right"></div>
+        <div class="radial-gradient-top-left"></div>
+        <div class="faq-title">
+          <h4 class="title-h3-bold">
+            Perguntas <span>Frequentes</span>
+          </h4>
+        </div>
+        <div class="accordion-wrapper">
+          <div class="accordion">
+            <div class="accordion-header">
+              <p class="body-medium">O que acontece se eu não usar todos os meus áudios no mês?</p>
+              <i class="fa-solid fa-angle-down accordion-icon"></i>
+            </div>
+            <p class="accordion-body body-regular">Os créditos de geração de aúdio são mensais e não cumulativos. Eles são renovados a cada ciclo de faturamento para garantir a disponibilidade de processamento da nossa IA.</p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header">
+              <p class="body-medium">Posso cancelar a qualquer momento?</p>
+              <i class="fa-solid fa-angle-down accordion-icon"></i>
+            </div>
+            <p class="accordion-body body-regular">Os créditos de geração de aúdio são mensais e não cumulativos. Eles são renovados a cada ciclo de faturamento para garantir a disponibilidade de processamento da nossa IA.</p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header">
+              <p class="body-medium">Como funciona o Trial de 3 dias?</p>
+              <i class="fa-solid fa-angle-down accordion-icon"></i>
+            </div>
+            <p class="accordion-body body-regular">Os créditos de geração de aúdio são mensais e não cumulativos. Eles são renovados a cada ciclo de faturamento para garantir a disponibilidade de processamento da nossa IA.</p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header">
+              <p class="body-medium">Qual é o impacto real da Sonora.ai nos custos da minha operação?</p>
+              <i class="fa-solid fa-angle-down accordion-icon"></i>
+            </div>
+            <p class="accordion-body body-regular">Os créditos de geração de aúdio são mensais e não cumulativos. Eles são renovados a cada ciclo de faturamento para garantir a disponibilidade de processamento da nossa IA.</p>
+          </div>
+        </div>
+      </section>
+           <footer>
+        <!-- Footer/Rodapé -->
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <div class="footer-icon-wrapper">
+              <img src="../assets/icons/Sonoro-logo.png" class="logo" />
+              <h4 class="company-name title-h5">Sonara.IA</h4>
+            </div>
+            <p class="footer-description body-regular-small">
+              A primeira plataforma brasileira white label <br />
+              a unir clipping, geração de áudios com <br />sotaques regionais e
+              trilhas por IA.
+            </p>
+            <div class="insta-icon-bg">
+              <i class="footer-icon fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-col">
+              <span class="footer-col-title body-regular-small">PRODUTO</span>
+              <a href="#" class="body-regular">Preço e Planos</a>
+              <a href="#" class="body-regular">Recursos</a>
+              <a href="#" class="body-regular">Clipping</a>
+              <a href="#" class="body-regular">Geração de Áudio</a>
+              <a href="#" class="body-regular">Trilhas</a>
+            </div>
+            <div class="footer-col">
+              <span class="footer-col-title body-regular-small">EMPRESA</span>
+              <a href="#" class="body-regular">Sobre</a>
+              <a href="#" class="body-regular">Blog</a>
+              <a href="#" class="body-regular">Contato</a>
+              <a href="#" class="body-regular">Afiliados</a>
+              <a href="#" class="body-regular"
+                >Política de Privacidade e Termos de Uso</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="body-regular-small">
+            © 2026 Sonora.IA. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+      <script>
+
+      function switchplan(plan) {
+        document.querySelectorAll('.price-value').forEach(el => {
+          el.textContent = el.dataset[plan];
+        });
+
+        const badgeSaving = document.getElementById('badge-saving');
+        const btnMonthly = document.getElementById('btn-monthly');
+        const btnYearly = document.getElementById('btn-yearly');
+
+        if ( plan == 'yearly' ) {
+          btnMonthly.className = 'body-medium btn-toggle-disabled';
+          btnYearly.className = 'body-medium btn-toggle-enable';
+          badgeSaving.style.display = 'flex';
+        } else {
+          btnMonthly.className = 'body-medium btn-toggle-active';
+          btnYearly.className = 'body-medium btn-toggle-disabled';
+          badgeSaving.style.display = 'none';
+        }
+      };
+
+        document.querySelectorAll('.accordion').forEach(accordion => {
+        accordion.addEventListener('click', () => {
+          const isOpen = accordion.classList.contains('accordion-open');
+
+          document.querySelectorAll('.accordion').forEach(el => {
+            el.classList.remove('accordion-open');
+          });
+
+          if (!isOpen) {
+            accordion.classList.add('accordion-open');
+          }
+        });
+      });
+
+
+  </script>
+  </body>
+</html>

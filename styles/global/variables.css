@@ -1,0 +1,15 @@
+:root {
+  /* Colors */
+  --color-primary: linear-gradient(
+    to right,
+    #b82760,
+    #fb1053,
+    #fe5e3a,
+    #f69c01
+  );
+
+  --color-disabled: #e9e9e9;
+  --color-default-small: #b82760;
+  --color-default-hover-small: #e2b65a;
+  --color-disabled-small: #e9e9e9;
+}
