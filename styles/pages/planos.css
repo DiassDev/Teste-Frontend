@@ -1,4 +1,5 @@
 .hero-prices {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 186px 0 0 0;
@@ -140,6 +141,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  z-index: 1;
 }
 
 .price-card-featured {
@@ -207,19 +209,41 @@
 
 /* Botões */
 .price-card-btn-outline {
+  padding: 8px 20px;
   width: 100%;
   height: 52px;
+  position: relative;
   border-radius: 12px;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-  outline: 2px solid #fb1053;
-  background: #ffffff;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
-  font-weight: 600;
+  color: black;
   margin-top: auto;
 }
 
+.price-card-btn-outline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 2px;
+  background: linear-gradient(to right, #b82760, #fb1053, #fe5e3a, #f69c01);
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.price-card-btn-outline:hover {
+  background: linear-gradient(to right, #b82760, #fb1053, #fe5e3a, #f69c01);
+  color: white;
+}
+
 .price-card-btn-primary {
+  padding: 8px 20px;
   width: 100%;
   height: 52px;
   border-radius: 12px;
@@ -232,6 +256,8 @@
 }
 
 .prices-faq {
+  overflow: hidden;
+  position: relative;
   min-height: 656px;
 }
 
@@ -299,4 +325,52 @@
 
 .accordion-open .accordion-icon {
   transform: rotate(180deg);
+}
+
+.hero-overlay-right {
+  position: absolute;
+  top: -400px;
+  right: -600px;
+  width: 1656px;
+  height: 1656px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fb105380, #fb105300 30%);
+  pointer-events: none;
+  opacity: 30%;
+}
+
+.hero-overlay-left {
+  position: absolute;
+  top: -400px;
+  left: -500px;
+  width: 1456px;
+  height: 1456px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fdc90880, #fb105300, transparent 70%);
+  pointer-events: none;
+  opacity: 30%;
+}
+
+.radial-gradient-top-left {
+  position: absolute;
+  top: 700px;
+  left: -600px;
+  width: 1656px;
+  height: 1656px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fb105380, #fb105300, transparent 70%);
+  pointer-events: none;
+  opacity: 20%;
+}
+
+.radial-gradient-down-right {
+  position: absolute;
+  top: -400px;
+  right: -600px;
+  width: 1656px;
+  height: 1656px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fe5d3a80, #fe5d3a00 30%);
+  pointer-events: none;
+  opacity: 40%;
 }

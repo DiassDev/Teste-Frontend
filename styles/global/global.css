@@ -103,6 +103,7 @@ body {
   height: 2px;
   border-radius: 999px;
   background: linear-gradient(to right, #b82760, #fb1053, #fe5e3a, #f69c01);
+  transform: scaleX(1) !important;
 }
 
 .icon {
@@ -211,6 +212,7 @@ body {
 }
 
 footer {
+  z-index: 1;
   background-color: #181d2c;
   width: 100%;
   padding: 56px 0 0 0;
