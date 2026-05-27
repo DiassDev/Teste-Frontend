@@ -1,229 +1,262 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Recursos | Teste</title>
-    <link rel="stylesheet" href="recursos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
-    <!-- Nav-bar -->
-    <header class="nav-bar">
-        <img class="logo" alt="logo" src="img/">
-        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button> 
-        <nav class="navigation">
-            <a href="#">Preços e Planos</a>
-            <a href="#">Sobre</a>
-            <a href="#" class="active">Recursos
-                <i class="icon fa-solid fa-chevron-down"></i>
-            </a>
-            <a href="#">Blog</a>
-            <a href="#">Contato</a>
-            <a href="#">Afiliados</a>
-        </nav>
-        <div class="button-wrapper">
-            <button class="login-btn">Login</button>
-            <button class="cta-btn">Iniciar Teste Grátis</button>
-        </div>
-    </header>
-
-    <!-- Conteúdo da página -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/pages/recursos.css" />
+    <link rel="stylesheet" href="../styles/global/typography.css" />
+    <link rel="stylesheet" href="../styles/global/variables.css" />
+    <link rel="icon" href="../assets/icons/Sonoro-logo.ico" />
+    <link rel="stylesheet" href="../styles/global/global.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonara.IA | Nossos Recursos</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div
+        class="logo-wrapper"
+        onclick="window.location.href = '../index.html'"
+        style="cursor: pointer"
+      >
+        <img src="../assets/icons/Sonoro-logo.png" class="logo" />
+        <h4 class="company-name title-h5">Sonara.IA</h4>
+      </div>
+      <nav class="navigation">
+        <a class="body-regular" href="/pages/planos.html">Preços e Planos</a>
+        <a class="body-regular" href="/pages/sobre.html">Sobre</a>
+        <a class="body-regular active"
+          >Recursos <i class="icon fa-solid fa-chevron-down"></i
+        ></a>
+        <a class="body-regular">Blog</a>
+        <a class="body-regular">Contato</a>
+        <a class="body-regular">Afiliados</a>
+      </nav>
+      <div class="button-wrapper">
+        <button class="login-btn body-regular">Login</button>
+        <button class="cta-btn body-regular">Iniciar Teste Grátis</button>
+      </div>
+    </div>
     <main>
-
-        <!-- Seção Hero -->
-        <section class="hero">
-            <div class="hero-effect-right"></div> <!-- Efeito overlay com gradient circular à direita -->
-            <div class="hero-effect-left"></div> <!-- Efeito overlay com gradient circular à esquerda -->
-
-            <div class="hero-content">
-                <h3>Nossos Recursos  /  <span>CLIPPING</span></h3>
-                <div class="hero-icon-bg">
-                    <i class="icon-hero fa-brands fa-chromecast"></i>
-                </div>
-                <h1 class="headline">
-                    A matéria-prima da sua <br/>
-                    audiência: <span>Informação em<br/>
-                    tempo real, </span>24/7
-                </h1>
-                <p class="subheadline">
-                    Esqueça os buracos de pauta nos finais de semana e os altos custos com agências tradicionais.<br/> 
-                    Acesso instantâneo a um feed de notícias validado, categorizado e pronto para publicação ou<br/> 
-                    conversão em áudio, a qualquer hora do dia ou da noite.
-                </p>
-                <button class="hero-cta">
-                    Acessar Feed no Trial Gratuito
-                </button>
+      <section class="hero-resources">
+        <div class="overlay-right"></div>
+        <div class="overlay-left"></div>
+        <div class="headline-resources-wrapper">
+          <h5 class="body-medium"><span>Nossos Recursos</span></h5>
+          <h3 class="hero-headline">
+            Uma redação completa,<br />
+            automatizada e
+            <span
+              >pronta para <br />
+              escalar
+            </span>
+          </h3>
+          <p class="subtitle">
+            A Sonora.ai não é apenas um conversor de texto para áudio. É um
+            ecossistema white label <br />
+            desenhado para plugar inteligência editorial e eficiência
+            operacional diretamente no seu portal, <br />
+            rádio ou intranet. Descubra nossas soluções integradas.
+          </p>
+        </div>
+      </section>
+      <section class="resources-cards">
+        <div class="grid-card-wrapper">
+          <div class="feature-card">
+            <div class="icon-bg">
+              <ion-icon name="radio"></ion-icon>
             </div>
-
-        </section>
-
-        <!-- Seção de funcionalidades -->
-        <section class="features">
-            <div class="features-bg">
-                <img class="background" src="img/background-features.png">
-                <div class="features-content">
-                    <h1 class="features-headline">
-                        Inteligência editorial para<br/> 
-                        escalar a sua cobertura
-                    </h1>
-                    <p class="features-subheadline">
-                        Nosso sistema de clipping não faz apenas uma varredura cega na internet. Ele une tecnologia de ponta e
-                        curadoria jornalística para entregar conteúdo limpo, estruturado e relevante para o seu público.
-                    </p>
-            <div class="features-card-wrapper">
-                <div class="card">
-                    <div class="icon-bg">
-                        <i class="icon-feature fa-brands fa-chromecast"></i>
-                    </div>
-                    <h4 class="card-headline">Curadoria contra Fake News</h4>
-                    <p class="card-subheadline">Antes de chegar ao seu painel, o conteúdo passa por um rigoroso processo de validação. Protegemos o ativo mais valioso do seu portal: a credibilidade.</p>
-                    <a href="#">Descubra o poder do nosso Clipping <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="card">
-                    <div class="icon-bg">
-                        <i class="icon-feature fa-brands fa-chromecast"></i>
-                    </div>
-                    <h4 class="card-headline">Filtros (Região e Editoria)</h4>
-                    <p class="card-subheadline">O que importa em Manaus pode não ser a manchete em Porto Alegre. Filtre seu feed por estado, cidade ou categorias (Política, Economia, Esporte, Entretenimento) e entregue exatamente o que a sua audiência quer consumir.</p>
-                    <a href="#">Ouça as nossas Vozes e Sotaques <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="card">
-                    <div class="icon-bg">
-                        <i class="icon-feature fa-brands fa-chromecast"></i>
-                    </div>
-                    <h4 class="card-headline">Operação Ininterrupta (24/7)</h4>
-                    <p class="card-subheadline">A notícia não tira folga, e o seu portal também não deveria. Tenha volume de publicações garantido de madrugada, aos sábados, domingos e feriados, sem precisar inflar a folha de pagamento com horas extras de plantonistas.</p>
-                    <a href="#">Conheça as Trilhas Inteligentes <i class="fa-solid fa-arrow-right"></i></a>
-
-                </div>
+            <h5 class="title-h5">Clipping e Curadoria 24/7</h5>
+            <p class="body-medium">O oxigênio da sua operação</p>
+            <p class="body-regular">
+              Tenha acesso a um feed ininterrupto de <br />
+              notícias de todo o Brasil, com curadoria <br />
+              profissional e filtros avançados por região <br />
+              e editoria. Nunca mais deixe o seu portal desatualizado.
+            </p>
+            <a class="body-medium" href="#"
+              >Descubra o poder do nosso Clipping
+              <i class="feature-arrow fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+          <div class="feature-card">
+            <div class="icon-bg">
+              <img src="/assets/icons/Card-icon.png" />
             </div>
-
-        </section>
-
-        <!-- Seção de benefícios -->
-        <section class="benefits">
-            <div class="benefit-right-effect"></div> <!-- Efeito overlay com gradient circular -->
-
-            <div class="benefits-headline-content">
-                <h1>
-                    <span>Quem ganha tempo e dinheiro<br/></span>
-                    com o Clipping TESTE.ai?
-                </h1>
-                <p>Você pode usar nossos recursos de forma independente, mas a verdadeira mágica da TESTE.ai acontece na <br/> 
-                    integração, sem necessidade de outras ferramentas de edição.</p>
+            <h5 class="title-h5">
+              Geração de Áudio com <br />
+              Sotaques
+            </h5>
+            <p class="body-medium">A verdadeira voz da sua audiência</p>
+            <p class="body-regular">
+              Converta o nosso feed em locuções hiper-<br />realistas. Uma IA
+              treinada para respeitar e <br />
+              reproduzir com perfeição os sotaques e as <br />
+              nuances regionais do jornalismo brasileiro.
+            </p>
+            <a class="body-medium" href="#"
+              >Ouça as nossas Vozes e Sotaques
+              <i class="feature-arrow fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="feature-card">
+            <div class="icon-bg">
+              <i class="fa-solid fa-music"></i>
             </div>
-            <div class="benefits-card-wrapper">
-                <div class="benefit-card">
-                    <div class="icon-grid-bg">
-                        <i class="icon-grid fa-brands fa-chromecast"></i>
-                    </div>
-                    <h4>Portais de Notícias e Blogs</h4>
-                    <p>Mantenha a home sempre atualizada e aumente as visualizações de página (pageviews) com alto volume de publicações.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="icon-grid-bg">
-                        <i class="icon-grid fa-brands fa-chromecast"></i>
-                    </div>
-                    <h4>Rádios locais e Web Rádios</h4>
-                    <p>Tenha boletins informativos de hora em hora (as famosas 'cabeças de rede') sem precisar de uma equipe gigante de redação.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="icon-grid-bg">
-                        <i class="icon-grid fa-brands fa-chromecast"></i>
-                    </div>
-                    <h4>Intranets e comunicação Corporativa</h4>
-                    <p>Ofereça um feed de notícias dinâmico e focado em economia ou negócios para os colaboradores da sua empresa via integração manual ou pela nossa API.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="icon-grid-bg">
-                        <i class="icon-grid fa-brands fa-chromecast"></i>
-                    </div>
-                    <h4>Profissionais autônomos ou cotratados</h4>
-                    <p>Otimiza o tempo de trabalho, aumentando a escalabilidade da prestação de serviços e produtividade.</p>
-                </div>
+            <h5 class="title-h5">Trilhas Sonoras via IA</h5>
+            <p class="body-medium">O ritmo certo para a sua notícia</p>
+            <p class="body-regular">
+              Esqueça as assinaturas caras de bancos de<br />
+              áudio e os problemas com direitos<br />
+              autorais. Gere fundos musicais exclusivos<br />
+              e alinhados com o tema de cada pauta.
+            </p>
+            <a class="body-medium" href="#"
+              >Conheça as Trilhas Inteligentes
+              <i class="feature-arrow fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="resources-bullets">
+        <div class="overlay-down-right"></div>
+        <div class="resources-bullets-headline-wrapper">
+          <h3 class="title-h3-bold">
+            Do texto ao ar em <span>menos de 3 <br />minutos</span>
+          </h3>
+          <p class="body-regular">
+            Você pode usar nossos recursos de forma independente, mas a
+            verdadeira mágica da Sonora.ai acontece na <br />
+            integração, sem necessidade de outras ferramentas de edição.
+          </p>
+        </div>
+        <div class="bullets-list">
+          <div class="bullet-step">
+            <div class="bullet-number">
+              <span class="title-h6">1</span>
             </div>
-
-        </section>
-
-        <!-- Seção de Call-to-Action -->
-        <section class="call-to-action">
-            <div class="cta-headline">
-                <h1>Assuma o controle da sua <span>linha editorial</span></h1>
-                <p>Veja o nosso feed de notícias funcionando na prática. Cancele quando quiser.</p>
+            <div class="bullet-step-content">
+              <h5 class="title-h5">Escolha a Pauta</h5>
+              <p class="body-regular">
+                Selecione a notícia do seu feed personalizado.
+              </p>
             </div>
-            <div class="btn-call-to-action-wrapper">
-                <button class="primary-cta">
-                    Iniciar Trial de 3 Dias
-                </button>
-                <button class="secondary-cta">
-                    Entenda a nossa Geração de Áudio
-                </button>
-            </div>
-        </section>
-    </main>
-    <footer>
+          </div>
 
+          <div class="bullet-step">
+            <div class="bullet-number">
+              <span class="title-h6">2</span>
+            </div>
+            <div class="bullet-step-content">
+              <h5 class="title-h5">Personalize</h5>
+              <p class="body-regular">
+                Edite o texto se desejar e salve. Caso queira, adicione a sua
+                vinheta e escolha o sotaque regional ideal
+                <br />para converter a notícia em áudio.
+              </p>
+            </div>
+          </div>
+
+          <div class="bullet-step">
+            <div class="bullet-number">
+              <span class="title-h6">3</span>
+            </div>
+            <div class="bullet-step-content">
+              <h5 class="title-h5">Gere e Publique</h5>
+              <p class="body-regular">
+                Com um clique, a IA transforma o texto em um áudio de alta
+                fidelidade, pronto para ir ao ar na sua<br />
+                rádio, podcast ou portal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta-about">
+        <div class="cta-headline-wrapper">
+          <h3 class="title-h3-bold">
+            Comece a <span>transformar informação <br /></span>em audiência
+          </h3>
+          <p class="body-regular">
+            Explore a plataforma na prática. Assine agora ou inicie o seu
+            período de testes.
+          </p>
+          <div class="cta-button-wrapper">
+            <button class="cta body-regular">
+              Iniciar meu Trial de 3 Dias
+            </button>
+            <button
+              class="outline body-regular"
+              onclick="window.location.href = './planos.html'"
+            >
+              Ver Planos e Preços
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer>
         <!-- Footer/Rodapé -->
         <div class="footer-wrapper">
-            <div class="footer-left">
-                <p class="footer-description">
-                    A primeira plataforma brasileira white label a unir clipping, geração de áudios com sotaques regionais e trilhas por IA.
-                </p>
-                <div class="insta-icon-bg">
-                    <i class="footer-icon fa-brands fa-instagram"></i>
-                </div>
+          <div class="footer-left">
+            <div class="footer-icon-wrapper">
+              <img src="/assets/icons/Sonoro-logo.png" class="logo" />
+              <h4 class="company-name title-h5">Sonara.IA</h4>
             </div>
+            <p class="footer-description body-regular-small">
+              A primeira plataforma brasileira white label <br />
+              a unir clipping, geração de áudios com <br />sotaques regionais e
+              trilhas por IA.
+            </p>
+            <div class="insta-icon-bg">
+              <i class="footer-icon fa-brands fa-instagram"></i>
+            </div>
+          </div>
 
-            <div class="footer-links">
-                <div class="footer-col">
-                    <span class="footer-col-title">PRODUTO</span>
-                    <a href="#">Preço e Planos</a>
-                    <a href="#">Recursos</a>
-                    <a href="#">Clipping</a>
-                    <a href="#">Geração de Áudio</a>
-                    <a href="#">Trilhas</a>
-                </div>
-                <div class="footer-col">
-                    <span class="footer-col-title">EMPRESA</span>
-                    <a href="#">Sobre</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contato</a>
-                    <a href="#">Afiliados</a>
-                    <a href="#">Política de Privacidade e Termos de Uso</a>
-                </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <span class="footer-col-title body-regular-small">PRODUTO</span>
+              <a href="./pages/planos.html" class="body-regular"
+                >Preço e Planos</a
+              >
+              <a href="/pages/recursos.html" class="body-regular">Recursos</a>
+              <a href="#" class="body-regular">Clipping</a>
+              <a href="#" class="body-regular">Geração de Áudio</a>
+              <a href="#" class="body-regular">Trilhas</a>
             </div>
+            <div class="footer-col">
+              <span class="footer-col-title body-regular-small">EMPRESA</span>
+              <a href="/pages/sobre.html" class="body-regular">Sobre</a>
+              <a href="#" class="body-regular">Blog</a>
+              <a href="#" class="body-regular">Contato</a>
+              <a href="#" class="body-regular">Afiliados</a>
+              <a href="#" class="body-regular"
+                >Política de Privacidade e Termos de Uso</a
+              >
+            </div>
+          </div>
         </div>
 
         <div class="footer-bottom">
-            <p>© 2026 TESTE.IA. All rights reserved.</p>
+          <p class="body-regular-small">
+            © 2026 Sonora.IA. All rights reserved.
+          </p>
         </div>
-    </footer>
-
-    <script>
-        
-        // Função para personalizar a nav-bar em dispositivos móveis //
-
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.querySelector('.navigation');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('open');
-            nav.classList.toggle('open');
-        });
-
-        nav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-            hamburger.classList.remove('open');
-            nav.classList.remove('open');
-            });
-        });
-    </script>
-    
-</body>
+      </footer>
+    </main>
+  </body>
 </html>
