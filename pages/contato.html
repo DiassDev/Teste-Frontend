@@ -47,12 +47,189 @@
         <a class="body-regular active" href="/pages/contato.html">Contato</a>
         <a class="body-regular" href="/pages/afiliados.html">Afiliados</a>
       </nav>
+      <div class="button-wrapper">
+        <button
+          class="login-btn body-regular"
+          onclick="window.location.href = '/pages/login.html'"
+        >
+          Login
+        </button>
+        <button class="cta-btn body-regular">Iniciar Teste Grátis</button>
+      </div>
     </div>
+    <main>
+      <section class="hero-contact">
+        <div class="hero-overlay-gradient-left"></div>
+        <div class="hero-overlay-gradient-right"></div>
+        <div class="hero-content-wrapper">
+          <p class="body-medium index-text"><span>Contato</span></p>
+          <h2 class="hero-headline">Fale com a <span>Sonora.IA</span></h2>
+          <p class="subtitle">
+            Como podemos impulsionar o seu negócio hoje? Selecione o motivo do
+            seu contato abaixo para <br />
+            que nosso time de especialistas retorne com agilidade e precisão.
+          </p>
+        </div>
+      </section>
+      <section class="contact-form-section">
+        <div class="form-gradient-overlay"></div>
+        <div class="contact-form-card">
+          <div class="form-group">
+            <label class="form-label body-medium"
+              >Nome Completo <span class="required">*</span></label
+            >
+            <input
+              class="form-input body-regular"
+              type="text"
+              placeholder="Digite aqui"
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label body-medium"
+                >E-mail profissional <span class="required">*</span></label
+              >
+              <input
+                class="form-input body-regular"
+                type="email"
+                placeholder="Digite aqui"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label body-medium"
+                >Telefone/WhatsApp <span class="required">*</span></label
+              >
+              <input
+                class="form-input body-regular"
+                type="tel"
+                placeholder="(00) 00000-0000"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label body-medium"
+              >Qual é o motivo do seu contato?
+              <span class="required">*</span></label
+            >
+            <div class="select-wrapper">
+              <select class="form-select body-regular">
+                <option value="" disabled selected>Selecione</option>
+                <option>Contratação e Plano Enterprise</option>
+                <option>Suporte Técnico</option>
+                <option>Dúvidas Gerais</option>
+                <option>Programa de Afiliados</option>
+                <option>Trabalhe Conosco</option>
+                <option>Ouvidoria / Reclamações</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-icon"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label body-medium"
+              >Assunto <span class="required">*</span></label
+            >
+            <input
+              class="form-input body-regular"
+              type="text"
+              placeholder="Digite aqui"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label body-medium"
+              >Mensagem <span class="required">*</span></label
+            >
+            <textarea
+              class="form-textarea body-regular"
+              placeholder="Digite aqui"
+            ></textarea>
+          </div>
+
+          <button class="form-attach body-regular">
+            <i class="fa-solid fa-folder-open"></i> Anexar
+          </button>
+
+          <div class="form-consent">
+            <div
+              class="custom-checkbox"
+              id="consentBox"
+              onclick="toggleConsent(this)"
+            >
+              <i class="fa-solid fa-check check-icon"></i>
+            </div>
+            <label
+              class="body-regular-small"
+              onclick="toggleConsent(document.getElementById('consentBox'))"
+            >
+              Concordo que a Sonora.IA colete e armazene meus dados para fins de
+              contato e atendimento, conforme descrito na
+              <a href="#" class="consent-link">Política de Privacidade.</a>"
+            </label>
+          </div>
+
+          <button class="form-submit body-regular">Enviar</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- Footer/Rodapé -->
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <div class="footer-icon-wrapper">
+            <img src="/assets/icons/Sonoro-logo.png" class="logo" />
+            <h4 class="company-name title-h5">Sonara.IA</h4>
+          </div>
+          <p class="footer-description body-regular-small">
+            A primeira plataforma brasileira white label <br />
+            a unir clipping, geração de áudios com <br />sotaques regionais e
+            trilhas por IA.
+          </p>
+          <div class="insta-icon-bg">
+            <i class="footer-icon fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <span class="footer-col-title body-regular-small">PRODUTO</span>
+            <a href="./pages/planos.html" class="body-regular"
+              >Preço e Planos</a
+            >
+            <a href="/pages/recursos.html" class="body-regular">Recursos</a>
+            <a href="/pages/recursosClipping.html" class="body-regular"
+              >Clipping</a
+            >
+            <a href="/pages/recursosGeracao.html" class="body-regular"
+              >Geração de Áudio</a
+            >
+            <a href="/pages/recursosTrilhas.html" class="body-regular"
+              >Trilhas</a
+            >
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title body-regular-small">EMPRESA</span>
+            <a href="/pages/sobre.html" class="body-regular">Sobre</a>
+            <a href="/pages/blog.html" class="body-regular">Blog</a>
+            <a href="/pages/contato.html" class="body-regular">Contato</a>
+            <a href="/pages/afiliados.html" class="body-regular">Afiliados</a>
+            <a href="#" class="body-regular"
+              >Política de Privacidade e Termos de Uso</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="body-regular-small">© 2026 Sonora.IA. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      function toggleConsent(el) {
+        el.classList.toggle("checked");
+      }
+    </script>
   </body>
-  <main>
-    <section class="hero-contact">
-      <div class="hero-overlay-gradient-left"></div>
-      <div class="hero-overlay-gradient-right"></div>
-    </section>
-  </main>
 </html>
