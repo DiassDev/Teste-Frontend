@@ -254,21 +254,41 @@ footer {
   justify-content: center;
   font-size: 18px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.insta-icon-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(to right, #b82760, #fb1053, #fe5e3a, #f69c01);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.insta-icon-bg:hover::before {
+  opacity: 1;
 }
 
 .footer-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 24px;
+  font-weight: 400;
   background: linear-gradient(to right, #b82760, #fb1053, #fe5e3a, #f69c01);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
-  font-size: 24px;
-  font-weight: 400;
+  transition: -webkit-text-fill-color 0.3s ease-in-out;
 }
 
-.insta-icon-bg:hover {
-  border-color: rgba(255, 255, 255, 0.4);
-  color: white;
+.insta-icon-bg:hover .footer-icon {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: white;
 }
 
 .footer-links {
