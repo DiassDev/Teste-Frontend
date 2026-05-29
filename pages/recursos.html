@@ -40,15 +40,20 @@
       <nav class="navigation">
         <a class="body-regular" href="/pages/planos.html">Preços e Planos</a>
         <a class="body-regular" href="/pages/sobre.html">Sobre</a>
-        <a class="body-regular active"
+        <a class="body-regular active" href="/pages/recursos.html"
           >Recursos <i class="icon fa-solid fa-chevron-down"></i
         ></a>
-        <a class="body-regular">Blog</a>
-        <a class="body-regular">Contato</a>
-        <a class="body-regular">Afiliados</a>
+        <a class="body-regular" href="/pages/blog.html">Blog</a>
+        <a class="body-regular" href="/pages/contato.html">Contato</a>
+        <a class="body-regular" href="/pages/afiliados.html">Afiliados</a>
       </nav>
       <div class="button-wrapper">
-        <button class="login-btn body-regular">Login</button>
+        <button
+          class="login-btn body-regular"
+          onclick="window.location.href = './login.html'"
+        >
+          Login
+        </button>
         <button class="cta-btn body-regular">Iniciar Teste Grátis</button>
       </div>
     </div>
@@ -202,7 +207,7 @@
             </button>
             <button
               class="outline body-regular"
-              onclick="window.location.href = './planos.html'"
+              onclick="window.location.href = '/pages/planos.html'"
             >
               Ver Planos e Preços
             </button>
@@ -230,20 +235,26 @@
           <div class="footer-links">
             <div class="footer-col">
               <span class="footer-col-title body-regular-small">PRODUTO</span>
-              <a href="./pages/planos.html" class="body-regular"
+              <a href="/pages/planos.html" class="body-regular"
                 >Preço e Planos</a
               >
               <a href="/pages/recursos.html" class="body-regular">Recursos</a>
-              <a href="#" class="body-regular">Clipping</a>
-              <a href="#" class="body-regular">Geração de Áudio</a>
-              <a href="#" class="body-regular">Trilhas</a>
+              <a href="/pages/recursosClipping.html" class="body-regular"
+                >Clipping</a
+              >
+              <a href="/pages/recursosGeracao.html" class="body-regular"
+                >Geração de Áudio</a
+              >
+              <a href="/pages/recursosTrilhas.html" class="body-regular"
+                >Trilhas</a
+              >
             </div>
             <div class="footer-col">
               <span class="footer-col-title body-regular-small">EMPRESA</span>
               <a href="/pages/sobre.html" class="body-regular">Sobre</a>
-              <a href="#" class="body-regular">Blog</a>
-              <a href="#" class="body-regular">Contato</a>
-              <a href="#" class="body-regular">Afiliados</a>
+              <a href="/pages/blog.html" class="body-regular">Blog</a>
+              <a href="/pages/contato.html" class="body-regular">Contato</a>
+              <a href="/pages/afiliados.html" class="body-regular">Afiliados</a>
               <a href="#" class="body-regular"
                 >Política de Privacidade e Termos de Uso</a
               >
